@@ -86,7 +86,7 @@ class Bfs
 				cout<<"Visited node "<<n<<endl;
 				graphNode *p = g.getNodeAtIndex(n);
 				// we are storing in the graph only the next nodes so p is used instead of p->next in the condition 
-				while(p!=NULL && p != NULL)
+				while(p!=NULL)
 				{
 					int nIndex = p->neighNode;
 					if(visited_Status[nIndex] == NV)
